@@ -1,0 +1,224 @@
+*{margin:0;padding:0;}
+/*$types=["rar","zip","7z","doc","docx","pdf","txt","exe","pkg","png"];*/
+body{
+	font-family:"微软雅黑";
+	font-size:16px;
+	font-size:100%;
+	background:#E7E7E7;
+}
+
+
+
+.box{
+	margin:0 auto; 
+	width:70%;
+
+	}
+.top{
+	box-shadow:0px 0px 50px  #ADADAD;
+	padding:0 15px;
+	
+	background:#FEBA14;
+	/*#CDBE70*/
+	width:100%;
+	border-bottom-right-radius:10px;
+	border-bottom-left-radius:10px;
+	clear:both;
+}
+.header{
+	width:100%;
+	height:55px;
+
+
+}
+.logo{
+	padding:10px 0;
+	color:white;	
+	font-size:20px;
+	float:left;
+}
+	.logo img{
+		height:35px;
+	}
+.search{
+	float:right;
+	padding:10px 15px;
+
+}
+.search_main{
+	margin-top:5px;
+	padding:0 15px;
+}
+.search_main .item {
+	width:100%;
+}
+
+.path{
+	padding:10px 0;
+	margin-bottom:5px;
+	width:100%;
+	border-bottom-right-radius:15px;
+	border-bottom-left-radius:15px;
+	color:black;
+	clear:both;
+}
+.search{
+		padding:10px 0;
+		margin-bottom:5px;
+}
+.path a{
+	text-decoration:none;
+	color:black;
+}
+.path a:hover{
+	text-decoration:none;
+	color:#990033;
+
+}
+
+
+
+
+	
+	
+
+.item ,.no-result{
+	padding:20px 15px;
+	margin-bottom:10px;
+	margin-left:8px;
+	width:49%;
+	background:#EDEDED;
+	float:left;
+	border-radius:8px;
+	text-decoration:none;
+	cursor:pointer;
+	box-shadow:0px 8px 30px  #ADADAD;
+	}
+.item_folder{
+	background:#E0E0E0;
+	/*#D1D1D1*/
+}
+
+.item a{
+	color:black;
+	text-decoration:none;
+	font-size:15px;
+	background-repeat:no-repeat;background-size:30px 30px;background-position:5px center;
+	padding:5px 50px;
+	/*禁止文件名换行*/
+	display:inline-block;
+	width:83%;
+	white-space:nowrap;text-overflow:ellipsis;overflow:hidden;
+}
+.item span{
+	display:inline-block;
+	padding:5px 0px;
+}
+.item:hover{
+	background:#CBCBCB;
+}
+.item span{
+	float:right;
+}
+
+.item_folder a{
+	background-image:url("img/folder.png");
+	
+}
+
+.item_zip a,.item_7z a,.item_rar a{
+	background-image:url("img/zip.png");
+	
+}
+
+.item_doc a,.item_docx  a{
+	background-image:url("img/doc.png");
+	
+}
+.item_ppt a,.item_pptx a{
+	background-image:url("img/ppt.png");
+}
+.item_pdf a{
+	background-image:url("img/pdf.png");
+	
+}
+.item_txt a{
+	background-image:url("img/txt.png");
+	
+}
+.item_sql a{
+	background-image:url("img/sql.png");
+	
+}
+.item_exe a{
+	background-image:url("img/exe.png");
+	
+}
+.item_pkg a{
+	background-image:url("img/pkg.png");
+	
+}
+
+.item_png a,.item_jpg a{
+	background-image:url("img/png.png");
+	
+}
+
+.item_other a{
+	background-image:url("img/other.png");
+	
+
+}
+.item_apk a{
+	background-image:url("img/apk.png");
+	
+}
+
+
+
+
+@media only screen and (max-width: 1300px){
+	.box{
+	margin:0 auto; 
+	width:70%;
+	}
+	.item ,.no-result{
+		width:100%;
+		margin-left:0px;
+	}
+}
+@media (max-device-width:600px){
+	body{
+			font-size:300%;
+	}
+	.box{
+	margin:0 auto; 
+	width:100%;
+
+	}
+	.item ,.no-result{
+		width:100%;
+		margin-left:0px;
+		padding:30px 30px;
+		margin-bottom:10px;
+	}
+	.item a{
+	font-size:120%;
+	width:70%;
+	background-size:60px 60px;
+	padding: 5px 80px;
+	}
+	.search{
+	float:right;
+	padding:10px 15px;
+	}
+	.logo img{
+		height:60px;
+	}
+	.header{
+		height:90px;
+	}
+	.path{
+		font-size:33px;
+	}
+}
